@@ -1,0 +1,6 @@
+.cpcache
+.nrepl-port
+.shadow-cljs
+resources
+public/out
+public/asset

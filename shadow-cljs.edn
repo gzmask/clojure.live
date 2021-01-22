@@ -1,0 +1,14 @@
+{:deps {:aliases [:shadow-cljs]}
+ :dev-http {8080 "public"}
+ :nrepl {:middleware []}
+ :source-paths ["src"]
+ :builds {:frontend {:target :browser
+                     :devtools {:repl-pprint true
+                                :repl-init-ns app
+                                :after-load app/init}
+                     :compiler-options {:optimizations :simple
+                                        :source-map true}
+                     :output-dir "public/out"
+                     :asset-path "out"
+                     :modules {:main {:init-fn app/init}}
+                     }}}
