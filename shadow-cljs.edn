@@ -10,5 +10,8 @@
                                         :source-map true}
                      :output-dir "public/out"
                      :asset-path "out"
-                     :modules {:main {:init-fn app/init}}
-                     }}}
+                     :modules {:main {:init-fn app/init}}}
+          :bootstrap-support {:target :bootstrap
+                              :output-dir "public/out/bootstrap"
+                              :exclude #{cljs.js}
+                              :entries [cljs.js]}}}
