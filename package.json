@@ -1,0 +1,26 @@
+{
+  "name": "clojure.live",
+  "version": "1.0.0",
+  "description": "## start the shadow-cljs compilers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzmask/clojure.live.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gzmask/clojure.live/issues"
+  },
+  "homepage": "https://github.com/gzmask/clojure.live#readme",
+  "devDependencies": {
+    "shadow-cljs": "^2.11.14"
+  },
+  "dependencies": {
+    "babylonjs": "^4.2.0"
+  }
+}
