@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/gzmask/clojure.live#readme",
   "devDependencies": {
+    "@babylonjs/core": "^4.2.0",
+    "@babylonjs/inspector": "^4.2.0",
     "shadow-cljs": "^2.11.14"
   },
   "dependencies": {

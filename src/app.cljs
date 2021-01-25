@@ -1,11 +1,13 @@
 (ns app
   (:require
+   [babylonjs :refer [Engine Scene]]
    [sci.core :as sci]
    [edamame.core :refer [parse-string]]
    [cljs.js :as cljs]
    [cljs.env :as env]
    [shadow.cljs.bootstrap.browser :as boot]))
-
+;;import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, Mesh, MeshBuilder } from "@babylonjs/core";
+;;import { Scene, Engine } from 'babylonjs';
 (defonce compile-state-ref (env/default-compiler-env))
 
 (defn init []
@@ -63,6 +65,7 @@
 
   ;;shortname
   (eval "(js/alert \"yo\")")
+
 
   )
 
