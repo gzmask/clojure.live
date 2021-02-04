@@ -22,9 +22,9 @@
                  :load (partial boot/load compile-state-ref)}
                 prn))))
 
-(defn eval
+(defn my-eval
   ([code-str]
-   (eval code-str {}))
+   (my-eval code-str {}))
   ([code-str opts]
    (cljs/eval compile-state-ref
               (parse-string code-str)
@@ -70,7 +70,7 @@
               prn)
 
   ;;shortname
-  (eval "(js/alert \"yo\")")
+  (my-eval "(js/alert \"yo\")")
 
   ;;babylon js
   (def canvas (.getElementById js/document "myCanvas"))
